@@ -1,0 +1,32 @@
+/* Styles.css */
+/* .bulb {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .on {
+    background-color: yellow;
+  } */
+
+  /* <style> */
+.bulb {
+  width: 230px;
+  height: 280px;
+  /* border-radius: 50%; */
+  /* background-color: gray; */
+  background-image: url(./house4\ \(2\).jpg);
+  /* transition: background-image 0.5s; */
+}
+
+.bulbOn {
+  width: 230px;
+  height: 280px;
+  /* background-color: yellow; */
+  background-image: url(./house4\ \(1\).jpg);
+}
+/* </style> */
+  
