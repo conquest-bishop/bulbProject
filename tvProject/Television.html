@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="tv-container">
+        <div class="inner-container">
+          <template v-for="program  in programs" v>
+            <video controls autoplay class="tv-program"
+              v-if="programCounter == program.id && powerOn"
+            >
+              <source :src="program.url" width="550px" heigh="340px" />
+            </video>
+          </template>
+        </div>
+        <div class="btn-container">
+          <div class="tv-control">
+            <button class="btn" class="tv-btn" @click="backward"> back </button>
+            <br>
+            <button class="btn" class="tv-btn" @click="forward"> next </button>
+            <br>
+            <button class="btn btn-pwr" class="tv-btn" @click="togglePower"> I/0 {{ powerOn ? 'OFF' : 'ON' }} </button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
